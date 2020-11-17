@@ -46,9 +46,13 @@ theme:
   font: false
   language: zh
   favicon: assets/favicon.ico
+  logo: assets/logo.png
   custom_dir: overrides
   features:
     - navigation.tabs
+
+extra_css:
+  - assets/extra.css
 
 use_directory_urls: false
 
