@@ -203,6 +203,15 @@ nav:
             - 获取设备id: api/d01_00006.md
             - 获取wifibssid: api/d01_00007.md
             - 获取定位: api/d01_00008.md
+    - 服务端SDK:
+        - 基础设置: api/e01_00001.md
+        - Java SDK开发指南: api/e01_00002.md
+        - PHP SDK开发指南: api/e01_00003.md
+        - Python SDK开发指南: api/e01_00004.md
+        - C# SDK开发指南: api/e01_00005.md
+        - Golang SDK开发指南: api/e01_00006.md
+        - C++ SDK开发指南: api/e01_00007.md
+        - SDK下载: api/e01_00008.md
   - 产品文档:
     - product/index.md
   - 知乎: https://www.zhihu.com/people/youdu.im/posts
