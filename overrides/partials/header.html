@@ -1,0 +1,115 @@
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+{% set site_url = config.site_url | default(nav.homepage.url, true) | url %}
+{% if not config.use_directory_urls and site_url[0] == site_url[-1] == "." %}
+{% set site_url = site_url ~ "/index.html" %}
+{% endif %}
+
+<!-- Application header -->
+<header class="md-header" data-md-component="header">
+
+    <!-- Top-level navigation -->
+    <nav class="md-header-nav md-grid" aria-label="{{ lang.t('header.title') }}">
+
+        <!-- Link to home -->
+        <a href="/" title="{{ config.site_name | e }}" class="md-header-nav__button md-logo"
+            aria-label="{{ config.site_name }}">
+            <img src="{{ config.theme.head_logo | url }}" alt="logo" />
+        </a>
+
+        <!-- Button to open drawer -->
+        <label class="md-header-nav__button md-icon" for="__drawer">
+            {% include ".icons/material/menu" ~ ".svg" %}
+        </label>
+
+        <!-- Header title -->
+        <div class="md-header-nav__title" data-md-component="header-title">
+
+            <nav aria-label="{{ lang.t('tabs.title') }}" data-md-component="tabs">
+                <div class="my_mb_nav">
+                    {% if config.site_name == page.title %}
+                    <div class="md-header-nav__ellipsis md-ellipsis">
+                        {{ config.site_name }}
+                    </div>
+                    {% else %}
+                    <div class="md-header-nav__ellipsis">
+                        <span class="md-header-nav__topic md-ellipsis">
+                            {{ config.site_name }}
+                        </span>
+                        <span class="md-header-nav__topic md-ellipsis">
+                            {% if page and page.meta and page.meta.title %}
+                            {{ page.meta.title }}
+                            {% else %}
+                            {{ page.title }}
+                            {% endif %}
+                        </span>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="my_nav" id="my_nav">
+                    <ul class="">
+                        {% for nav_item in nav %}
+                        {% if nav_item.is_homepage or nav_item.url == "index.html" %}
+                        {% set class = "menu-item" %}
+                        {% if not page.ancestors | length and nav | selectattr("url", page.url) %}
+                        {% set class = "menu-item on" %}
+                        {% endif %}
+                        <li class="{{ class }}">
+                            <a href="{{ nav_item.url | url }}">
+                                {{ nav_item.title }}
+                            </a>
+                        </li>
+
+                        <!-- Main navigation item with nested items -->
+                        {% elif nav_item.children and nav_item.children | length > 0 %}
+                        {% set title = title | default(nav_item.title) %}
+
+                        <!-- Recurse, if the first item has nested items -->
+                        {% if (nav_item.children | first).children %}
+                        {% set nav_item = nav_item.children | first %}
+                        {% include "partials/tabs-item.html" %}
+
+                        <!-- Render item -->
+                        {% else %}
+                        {% set class = "menu-item" %}
+                        {% if nav_item.active %}
+                        {% set class = "menu-item on" %}
+                        {% endif %}
+                        <li class="{{ class }}">
+                            <a href="{{ (nav_item.children | first).url | url }}">
+                                {{ title }}
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        <!-- Main navigation item with external link -->
+                        {% elif nav_item.url.startswith("http") %}
+                        <li class="menu-item">
+                            <a href="{{ nav_item.url | url }}">
+                                {{ nav_item.title }}
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Button to open search dialogue -->
+        {% if "search" in config["plugins"] %}
+        <label class="md-header-nav__button md-icon" for="__search">
+            {% include ".icons/material/magnify.svg" %}
+        </label>
+
+        <!-- Search interface -->
+        {% include "partials/search.html" %}
+        {% endif %}
+
+        <!-- Repository containing source -->
+        {% if config.repo_url %}
+        <div class="md-header-nav__source">
+            {% include "partials/source.html" %}
+        </div>
+        {% endif %}
+    </nav>
+</header>
