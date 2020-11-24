@@ -34,6 +34,59 @@ nav:
       - 手机客户端: user/g01_00004.md
   - 管理员指南:
     - admin/index.md
+    - 安装部署:
+        - 服务端安装:
+            - 安装准备: admin/a01_00001.md
+            - Windows服务端安装: admin/a01_00002.md
+            - Linux服务端: admin/a01_00003.md
+            - 防火墙策略: admin/a01_00004.md
+            - 导入License授权: admin/a01_00005.md
+        - 服务端升级:
+            - 升级前准备: admin/a01_00006.md
+            - Windows服务端升级: admin/a01_00007.md
+            - Linux服务端升级: admin/a01_00008.md
+        - MySQL独立部署:
+            - Windows版安装: admin/a01_00009.md
+            - Windows迁移数据库: admin/a01_00010.md
+            - Linux版安装: admin/a01_00011.md
+            - Linux迁移数据库: admin/a01_00012.md
+        - 文件服务独立部署:
+            - 安装准备: admin/a01_00013.md
+            - 主服务配置: admin/a01_00014.md
+            - 文件服务配置: admin/a01_00015,md
+        - 代理服务独立部署:
+            - 安装准备: admin/a01_00016.md
+            - 代理服务配置: admin/a01_00017.md
+        - 推送服务独立部署:
+            - 安装准备: admin/a01_00018.md
+            - 主服务器配置: admin/a01_00019.md
+            - 推送服务配置: admin/a01_00020.md
+    - 增值服务:
+        - 消息审计插件:
+            - 安装准备: admin/e01_00001.md
+            - Windows版安装: admin/e01_00002.md
+            - Linux版安装: admin/e01_00003.md
+            - 关于场景二的相关设置: admin/e01_00004.md
+    - 数据管理:
+        - 自动备份:
+            - 备份说明: admin/f01_00001.md
+            - Windows服务端备份恢复数据: admin/f01_00002.md
+            - Linux服务端备份恢复数据: admin/f01_00003.md
+        - 数据迁移:
+            - 迁移准备: admin/f01_00004.md
+            - 备份关键数据: admin/f01_00005.md
+            - Windows旧服务器导出: admin/f01_00006.md
+            - Windows新服务器导入: admin/f01_00007.md
+            - Linux旧服务器导出: admin/f01_00008.md
+            - Linux新服务器导入: admin/f01_00009.md
+            - 迁移完成的后续事项: admin/f01_00010.md
+    - RTX手机版:
+        - 部署须知: admin/g01_00001.md
+        - RTX手机版部署: admin/g01_00002.md
+        - 云免费版切换到本地部署版: admin/g01_00003.md
+        - 腾讯通RTX全面切换至有度即时通: admin/g01_00004.md
+    
+    
   - 开发者文档:
     - api/index.md
     - 快速入门:
