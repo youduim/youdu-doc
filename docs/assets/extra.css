@@ -1,3 +1,141 @@
 :root {
-    --md-primary-fg-color:        #007fff;
+  --md-primary-fg-color: #007fff;
+}
+
+@media (min-width: 1200px) { 
+  .md-typeset{
+    font-size: 16px;
   }
+}
+
+.md-header-nav__button.md-logo {
+  padding-top: 15px;
+}
+
+.md-header-nav__button.md-logo img {
+  width: 176px;
+  height: auto;
+}
+
+.md-header {
+  background-color: white;
+  height: 70px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .05) !important;
+}
+
+.md-header input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.md-header input:-moz-placeholder {
+  color: #000;
+}
+
+.md-header input:-ms-input-placeholder {
+  color: #000;
+}
+
+/* 自定义的菜单 */
+.md-tabs {
+  display: none;
+}
+
+.md-header-nav__title {
+  position: relative;
+  height: 70px;
+}
+
+.my_nav {
+  color: #000;
+  font-size: 15px;
+  position: absolute;
+  right: 20px;
+  line-height: 70px;
+}
+
+.my_mb_nav {
+  display: none;
+}
+
+.my_nav.hidden {
+  display: none;
+}
+
+.my_nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.my_nav ul>li {
+  display: inline-block;
+  padding-right: .6rem;
+  padding-left: .6rem;
+  position: relative;
+}
+
+.my_nav ul>li>a {
+  display: block;
+  line-height: 70px;
+}
+
+.my_nav .menu-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: transparent;
+  display: block;
+  z-index: -1;
+}
+
+.my_nav .menu-item.on::after,
+.my_nav .menu-item:hover::after {
+  background-color: #007fff;
+}
+
+@media screen and (min-width: 60em) {
+  .md-search__inner {
+    width: 120px;
+  }
+
+  .md-search__input {
+    padding-right: 0px;
+    color: #000;
+    background-color: white;
+  }
+
+  .md-search {
+    padding-top: 14px;
+  }
+
+  .md-search__icon.md-icon {
+    color: #000;
+  }
+
+  .md-search__input {
+    font-size: 16px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 76.1875em) {
+  .my_nav {
+    display: none;
+  }
+
+  .my_mb_nav {
+    display: unset;
+  }
+
+  .md-header {
+    height: auto;
+    color: #000;
+  }
+
+  .md-header-nav__title {
+    height: auto;
+  }
+}
