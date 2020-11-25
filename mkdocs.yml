@@ -38,7 +38,7 @@ nav:
         - 服务端安装:
             - 安装准备: admin/a01_00001.md
             - Windows服务端安装: admin/a01_00002.md
-            - Linux服务端: admin/a01_00003.md
+            - Linux服务端安装: admin/a01_00003.md
             - 防火墙策略: admin/a01_00004.md
             - 导入License授权: admin/a01_00005.md
         - 服务端升级:
