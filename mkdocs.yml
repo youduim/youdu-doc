@@ -2,6 +2,8 @@ site_name: 有度即时通
 site_url: https://youdu.im
 site_description: 有度即时通的帮助中心，包含：用户指南、管理员指南、开发者文档、产品文档以及知乎的技术文章链接。
 site_author: xinda.im inc.
+repo_url: https://github.com/youduim/youdu-doc
+edit_uri: edit/inner/docs/
 
 nav:
   - 帮助中心: index.md
@@ -18,8 +20,10 @@ nav:
       - Mac客户端: user/b01_00002.md
       - Linux客户端: user/b01_00003.md
       - 手机客户端: user/b01_00004.md
+      - 问题答疑: user/b01_00005.md
     - 通讯录:
       - 通讯录使用指南: user/c01_00001.md
+      - 问题答疑: user/c01_00002.md
     - 下载安装:
       - Windows客户端: user/e01_00001.md
       - Mac客户端: user/e01_00002.md
@@ -38,7 +42,7 @@ nav:
         - 服务端安装:
             - 安装准备: admin/a01_00001.md
             - Windows服务端安装: admin/a01_00002.md
-            - Linux服务端: admin/a01_00003.md
+            - Linux服务端安装: admin/a01_00003.md
             - 防火墙策略: admin/a01_00004.md
             - 导入License授权: admin/a01_00005.md
         - 服务端升级:
@@ -66,7 +70,7 @@ nav:
             - 安装准备: admin/e01_00001.md
             - Windows版安装: admin/e01_00002.md
             - Linux版安装: admin/e01_00003.md
-            - 关于场景二的相关设置: admin/e01_00004.md
+            - 补充说明: admin/e01_00004.md
     - 数据管理:
         - 自动备份:
             - 备份说明: admin/f01_00001.md
@@ -82,16 +86,16 @@ nav:
             - 迁移完成的后续事项: admin/f01_00010.md
     - RTX手机版:
         - 部署须知: admin/g01_00001.md
-        - RTX手机版部署: admin/g01_00002.md
-        - 云免费版切换到本地部署版: admin/g01_00003.md
-        - 腾讯通RTX全面切换至有度即时通: admin/g01_00004.md
-    
-    
+        - 部署RTX手机版: admin/g01_00002.md
+        - 云版切换到本地部署版: admin/g01_00003.md
+        - RTX升级至有度即时通: admin/g01_00004.md
+
+
   - 开发者文档:
     - 开发指南:
         - 开发前必读: api/a01_00001.md
         - 服务端SDK下载: api/a01_00002.md
-        - 服务端SDK集成指南: 
+        - 服务端SDK集成指南:
             - Java SDK开发指南: api/a01_00003.md
             - PHP SDK开发指南: api/a01_00004.md
             - Python SDK开发指南: api/a01_00005.md
@@ -136,14 +140,14 @@ nav:
     - 服务端API:
         - 企业应用开发流程: api/c01_00001.md
         - 全局说明: api/c01_00002.md
-        - 企业应用: 
+        - 企业应用:
             - 发送应用消息: api/c01_00003.md
             - 应用消息回调: api/c01_00004.md
             - 设置角标: api/c01_00005.md
             - 发送弹窗消息: api/c01_00006.md
         - 单点登录: api/c01_00007.md
         - 会话管理: api/c01_00008.md
-        - 会话消息: 
+        - 会话消息:
             - 发送消息: api/c01_00009.md
             - 消息回调: api/c01_00010.md
         - 自定义菜单: api/c01_00011.md
@@ -154,9 +158,7 @@ nav:
             - 群管理: api/c01_00015.md
             - 全量覆盖: api/c01_00016.md
         - 素材管理: api/c01_00017.md
-        
-  - 产品文档:
-    - product/index.md
+
   - 知乎: https://www.zhihu.com/people/youdu.im/posts
   - 官网首页: https://youdu.im/
 
