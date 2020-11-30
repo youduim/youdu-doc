@@ -1,0 +1,38 @@
+<!-- Home page -->
+{% if nav_item.is_homepage or nav_item.url == "index.html" %}
+    {% set class = "menu-item" %}
+    {% if not page.ancestors | length and nav | selectattr("url", page.url) %}
+        {% set class = "menu-item on" %}
+    {% endif %}
+    <li class="{{ class }}">
+        <a href="{{ nav_item.url | url }}">
+            {{ nav_item.title }}
+        </a>
+    </li>
+
+<!-- Main navigation item with nested items -->
+{% elif nav_item.children and nav_item.children | length > 0 %}
+    {% set title = title | default(nav_item.title) %}
+    {% set class = "menu-item" %}
+    {% if nav_item.active %}
+        {% set class = "menu-item on" %}
+    {% endif %}
+
+    {% if (nav_item.children | first).children %}     
+        <!-- Recurse, if the first item has nested items -->  
+        {% set nav_item=nav_item.children | first%}
+    {% endif %}
+    <li class="{{ class }}">
+        <a href="{{ (nav_item.children | first).url | url }}" >
+            {{ title }}
+        </a>
+    </li>
+
+<!-- Main navigation item with external link -->
+{% elif nav_item.url.startswith("http") %}
+    <li class="menu-item">
+        <a href="{{ nav_item.url | url }}">
+            {{ nav_item.title }}
+        </a>
+    </li>
+{% endif %}

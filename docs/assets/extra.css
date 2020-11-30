@@ -2,8 +2,8 @@
   --md-primary-fg-color: #007fff;
 }
 
-@media (min-width: 1200px) { 
-  .md-typeset{
+@media (min-width: 1200px) {
+  .md-typeset {
     font-size: 16px;
   }
 }
@@ -33,6 +33,15 @@
 
 .md-header input:-ms-input-placeholder {
   color: #000;
+}
+
+/* 表格宽度100%适应屏幕 */
+.md-typeset__table {
+  width: 100%;
+}
+
+.md-typeset__table table {
+  display: table !important;
 }
 
 /* 自定义的菜单 */
@@ -118,6 +127,10 @@
   .md-search__input {
     font-size: 16px;
     height: 36px;
+  }
+
+  .box-002 {
+    justify-content: center;
   }
 }
 
