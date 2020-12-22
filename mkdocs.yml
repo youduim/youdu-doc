@@ -71,6 +71,9 @@ nav:
             - Windows版安装: admin/e01_00002.md
             - Linux版安装: admin/e01_00003.md
             - 补充说明: admin/e01_00004.md
+            - 消息审计插件的迁移准备: admin/e01_00005.md
+            - Windows版导出导入: admin/e01_00006.md
+            - Linux版导出导入: admin/e01_00007.md
     - 数据管理:
         - 自动备份:
             - 备份说明: admin/f01_00001.md
@@ -85,10 +88,13 @@ nav:
             - Linux新服务器导入: admin/f01_00009.md
             - 迁移完成的后续事项: admin/f01_00010.md
     - RTX手机版:
-        - 部署须知: admin/g01_00001.md
-        - 部署RTX手机版: admin/g01_00002.md
-        - 云版切换到本地部署版: admin/g01_00003.md
-        - RTX升级至有度即时通: admin/g01_00004.md
+        - 腾讯通RTX手机版插件介绍: admin/g01_00001.md
+        - 本地部署版（RTX服务器）: admin/g01_00002.md
+        - 本地部署版（独立部署）: admin/g01_00003.md
+        - 云免费版配置: admin/g01_00004.md
+        - 云免费版升级本地部署版: admin/g01_00005.md
+        - 关于并行和独立运行的说明: admin/g01_00006.md
+        - RTX全面切换至有度: admin/g01_00007.md
     - 问题答疑:   
         - 授权和商务咨询: admin/h01_00002.md
         - 管理后台访问: admin/h01_00001.md
