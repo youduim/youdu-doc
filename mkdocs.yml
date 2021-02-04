@@ -54,7 +54,7 @@ nav:
             - 升级前准备: admin/a01_00006.md
             - Windows服务端升级: admin/a01_00007.md
             - 【推荐】Linux二进制升级至Docker: admin/a01_00025.md
-            - Linux服务端升级: admin/a01_00008.md
+            - Linux二进制升级: admin/a01_00008.md
         - MySQL独立部署:
             - Windows版安装: admin/a01_00009.md
             - Windows迁移数据库: admin/a01_00010.md
