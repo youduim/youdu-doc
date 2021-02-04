@@ -53,6 +53,7 @@ nav:
         - 服务端升级:
             - 升级前准备: admin/a01_00006.md
             - Windows服务端升级: admin/a01_00007.md
+            - Linux二进制升级至Docker: admin/a01_00025.md
             - Linux服务端升级: admin/a01_00008.md
         - MySQL独立部署:
             - Windows版安装: admin/a01_00009.md
