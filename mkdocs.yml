@@ -41,6 +41,7 @@ nav:
     - 安装部署:
         - 服务端安装:
             - 安装准备: admin/a01_00001.md
+            - 信创版: admin/a01_00028.md
             - Docker【推荐】:
                 - Docker环境准备: admin/a01_00021.md
                 - Docker使用手册: admin/a01_00022.md
