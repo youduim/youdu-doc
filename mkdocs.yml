@@ -99,7 +99,7 @@ nav:
             - Linux旧服务器导出: admin/f01_00008.md
             - Linux新服务器导入: admin/f01_00009.md
             - 迁移完成的后续事项: admin/f01_00010.md
-    - RTX手机版:
+    - RTX迁移（RTX手机版）:
         - RTX插件介绍: admin/g01_00001.md
         - 本地部署版安装指南（一）: admin/g01_00002.md
         - 本地部署版安装指南（二）: admin/g01_00003.md
@@ -239,5 +239,5 @@ markdown_extensions:
 plugins:
   - search
 
-copyright: <a target="_blank" href="https://youdu.im/">珠海信达九州科技有限公司</a> &copy; 2020 xinda.im <a target="_blank" href="https://youdu.im/copyright/terms.html">服务协议</a> <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备15035175号</a>
+copyright: <a target="_blank" href="https://youdu.im/">珠海信达九州科技有限公司</a> &copy; 2022 xinda.im <a target="_blank" href="https://youdu.im/copyright/terms.html">服务协议</a> <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备15035175号</a>
 
