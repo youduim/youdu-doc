@@ -42,27 +42,19 @@ nav:
         - 服务端安装:
             - 安装准备: admin/a01_00001.md
             - 信创版: admin/a01_00028.md
-            - Docker【推荐】:
-                - Docker环境准备: admin/a01_00021.md
-                - Docker使用手册: admin/a01_00022.md
-                - 有度服务端安装: admin/a01_00023.md
-                - Portainer容器管理平台: admin/a01_00024.md
-            - Linux（二进制）: admin/a01_00003.md
             - Windows: admin/a01_00002.md
+            - Docker: admin/a01_00023.md            
+            - Linux二进制: admin/a01_00003.md
             - 防火墙策略: admin/a01_00004.md
             - 导入License授权: admin/a01_00005.md
         - 服务端升级:
             - 升级前准备: admin/a01_00006.md
-            - Docker: admin/a01_00027.md
-            - Linux（二进制升级至Docker）: admin/a01_00025.md
-            - Linux（二进制）: admin/a01_00008.md
+            - 信创版: admin/a01_00029.md
             - Windows: admin/a01_00007.md
+            - Docker: admin/a01_00027.md
+            - Linux二进制升级至Docker: admin/a01_00025.md
+            - Linux二进制: admin/a01_00008.md
         - 服务独立部署:
-            - MySQL:
-                - Windows版安装: admin/a01_00009.md
-                - Windows迁移数据库: admin/a01_00010.md
-                - Linux版安装: admin/a01_00011.md
-                - Linux迁移数据库: admin/a01_00012.md
             - 文件服务:
                 - 安装准备: admin/a01_00013.md
                 - 主服务配置: admin/a01_00014.md
@@ -74,9 +66,6 @@ nav:
                 - 安装准备: admin/a01_00018.md
                 - 主服务器配置: admin/a01_00019.md
                 - 推送服务配置: admin/a01_00020.md
-    - 拓展插件:
-        - 服务监控系统（APM）:
-            - APM系统部署: admin/a01_00026.md
     - 增值服务:
         - 消息审计插件:
             - 安装准备: admin/e01_00001.md
@@ -86,6 +75,9 @@ nav:
             - 消息审计插件的迁移准备: admin/e01_00005.md
             - Windows版导出导入: admin/e01_00006.md
             - Linux版导出导入: admin/e01_00007.md
+    - 拓展插件:
+        - 服务监控系统（APM）:
+            - APM系统部署: admin/a01_00026.md
     - 数据管理:
         - 自动备份:
             - 备份说明: admin/f01_00001.md
@@ -99,6 +91,16 @@ nav:
             - Linux旧服务器导出: admin/f01_00008.md
             - Linux新服务器导入: admin/f01_00009.md
             - 迁移完成的后续事项: admin/f01_00010.md
+    - 第三方软件使用参考: 
+        - Windows:
+            - MySQL 安装: admin/a01_00009.md
+            - MySQL 迁移数据库: admin/a01_00010.md
+        - Linux x86_64:
+            - Docker安装: admin/a01_00021.md
+            - Docker使用手册: admin/a01_00022.md
+            - Portainer安装: admin/a01_00024.md
+            - MySQL 安装: admin/a01_00011.md
+            - MySQL 迁移数据库: admin/a01_00012.md
     - RTX迁移（RTX手机版）:
         - RTX插件介绍: admin/g01_00001.md
         - 本地部署版安装指南（一）: admin/g01_00002.md
