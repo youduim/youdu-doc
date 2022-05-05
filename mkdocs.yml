@@ -101,6 +101,9 @@ nav:
             - Portainer安装: admin/a01_00024.md
             - MySQL 安装: admin/a01_00011.md
             - MySQL 迁移数据库: admin/a01_00012.md
+        - Linux arm_64:
+            - Docker安装: admin/a01_00030.md
+            - MariaDB安装: admin/a01_00031.md
     - RTX迁移（RTX手机版）:
         - RTX插件介绍: admin/g01_00001.md
         - 本地部署版安装指南（一）: admin/g01_00002.md
