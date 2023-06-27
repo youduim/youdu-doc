@@ -19,4 +19,8 @@ keywords: 有度即时通, 帮助中心, 用户指南, 管理员指南, 开发�
 
 想进一步了解有度即时通的设计理念和技术原理？可以参阅我们的[知乎技术专栏](https://www.zhihu.com/people/youdu.im/posts)。
 
-找不到答案？可以通过工单与我们联系：[提交工单](https://youdu.kf5.com/)。
+找不到答案？请与我们联系：
+
+官网：[https://youdu.im](https://youdu.im)
+
+客服电话：**400-097-0006**
